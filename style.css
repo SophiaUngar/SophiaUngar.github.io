@@ -1,0 +1,87 @@
+/* adapted from w3schools: https://www.w3schools.com/CSS/css_website_layout.asp */
+
+
+body{
+    background-color:whitesmoke;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+
+.header{
+    text-align: left;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.column{
+    float: left;
+}
+
+.column.middle{
+    width: 60%;
+}
+
+.column.side{
+    width: 20%;
+}
+
+.footer{
+    text-align: center;
+}
+
+/* so the footer displays at the bottom */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+/* responsiveness for small display windows */
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+/* solid line */
+/* https://www.w3schools.com/howto/howto_css_dividers.asp */
+hr.solid{
+    border-top: 4px solid green;
+    width: 95%;
+    float: left;
+}
+
+img{
+    width: 80%;
+    border-radius: 5%;
+
+    /* to center the images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    margin-top: 40px;
+    color: darkgreen;
+}
+
+h2.first{
+    margin-top: auto;
+}
+
+
+.green-text{
+    color: green;
+}
