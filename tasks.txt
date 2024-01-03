@@ -1,14 +1,8 @@
 Formatting
-- more space between topics
-- header prettier
 
 In between
 - format and look up copyright
 
 Writing
 - introduction/ about me
-- left column
 - more projects
-
-picture of me?
-url?
